@@ -20,7 +20,6 @@ def test_exit_dialog_box(accounts_page):
     assert accounts_page.add_record.is_located()
 
 
-
 def test_editing_area(accounts_page, add_new_record, other_random_data, delete_record_after_test):
     accounts_page.edit_table_element(add_new_record)
     accounts_page.editing_name_area.send_keys(other_random_data['name'])
