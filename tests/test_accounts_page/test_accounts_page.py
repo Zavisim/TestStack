@@ -11,13 +11,13 @@ def test_add_new_area(accounts_page, delete_record_after_test, other_random_data
 def test_cancel_dialog_box(accounts_page):
     accounts_page.cancel_dialog_b0x()
     time.sleep(2)
-    assert accounts_page.add_record.is_located()
+    assert not accounts_page.add_name_of_area.is_located()
 
 
 def test_exit_dialog_box(accounts_page):
     accounts_page.exit_dialog_box()
     time.sleep(2)
-    assert accounts_page.add_record.is_located()
+    assert not accounts_page.add_name_of_area.is_located()
 
 
 def test_editing_area(accounts_page, add_new_record, other_random_data, delete_record_after_test):
